@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Управление заказами</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+<div th:replace="fragments/header.html :: header"></div>
+<div class="container mt-5">
+    <h1>Управление заказами</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Имя клиента</th>
+            <th>Email</th>
+            <th>Адрес</th>
+            <th>Сумма</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="order : ${orders}">
+            <td th:text="${order.id}"></td>
+            <td th:text="${order.customerName}"></td>
+            <td th:text="${order.customerEmail}"></td>
+            <td th:text="${order.customerAddress}"></td>
+            <td th:text="${order.totalPrice}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

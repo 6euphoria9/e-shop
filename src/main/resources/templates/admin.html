@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+<div th:replace="fragments/header.html :: header"></div>
+<div class="container mt-5">
+    <h1>Панель администратора</h1>
+    <div class="list-group">
+        <a href="/admin/products" class="list-group-item list-group-item-action">Управление товарами</a>
+        <a href="/admin/orders" class="list-group-item list-group-item-action">Просмотр заказов</a>
+    </div>
+</div>
+</body>
+</html>
