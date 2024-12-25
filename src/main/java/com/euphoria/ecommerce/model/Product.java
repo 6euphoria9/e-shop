@@ -1,4 +1,4 @@
-package com.euphoria.e_shop.model;
+package com.euphoria.ecommerce.model;
 
 import jakarta.persistence.*;
 import lombok.*;

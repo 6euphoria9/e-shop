@@ -1,4 +1,4 @@
-package com.euphoria.e_shop.model;
+package com.euphoria.ecommerce.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -18,10 +18,6 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
 
     private String customerName;
     private String customerEmail;

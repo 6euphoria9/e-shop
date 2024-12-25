@@ -1,6 +1,6 @@
-package com.euphoria.e_shop.repository;
+package com.euphoria.ecommerce.repository;
 
-import com.euphoria.e_shop.model.Order;
+import com.euphoria.ecommerce.model.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

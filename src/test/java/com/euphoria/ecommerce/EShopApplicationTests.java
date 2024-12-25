@@ -1,4 +1,4 @@
-package com.euphoria.e_shop;
+package com.euphoria.ecommerce;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

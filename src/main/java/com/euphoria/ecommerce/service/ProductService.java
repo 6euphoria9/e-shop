@@ -1,11 +1,12 @@
-package com.euphoria.e_shop.service;
+package com.euphoria.ecommerce.service;
 
-import com.euphoria.e_shop.model.Product;
-import com.euphoria.e_shop.repository.ProductRepository;
+import com.euphoria.ecommerce.model.Product;
+import com.euphoria.ecommerce.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ProductService {
@@ -35,5 +36,12 @@ public class ProductService {
 
     public void deleteProduct(Long id) {
         productRepository.deleteById(id);
+    }
+
+    public List<Product> getPopularProducts() {
+        return productRepository.findAll()
+                .stream()
+                .limit(5)
+                .collect(Collectors.toList());
     }
 }

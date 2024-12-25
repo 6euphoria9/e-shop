@@ -1,8 +1,8 @@
-package com.euphoria.e_shop.service;
+package com.euphoria.ecommerce.service;
 
-import com.euphoria.e_shop.model.Cart;
-import com.euphoria.e_shop.model.Order;
-import com.euphoria.e_shop.repository.OrderRepository;
+import com.euphoria.ecommerce.model.Cart;
+import com.euphoria.ecommerce.model.Order;
+import com.euphoria.ecommerce.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

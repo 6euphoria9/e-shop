@@ -1,8 +1,8 @@
-package com.euphoria.e_shop.service;
+package com.euphoria.ecommerce.service;
 
-import com.euphoria.e_shop.model.Cart;
-import com.euphoria.e_shop.model.CartItem;
-import com.euphoria.e_shop.model.Product;
+import com.euphoria.ecommerce.model.Cart;
+import com.euphoria.ecommerce.model.CartItem;
+import com.euphoria.ecommerce.model.Product;
 import org.springframework.stereotype.Service;
 
 @Service

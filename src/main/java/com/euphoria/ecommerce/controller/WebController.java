@@ -1,7 +1,7 @@
-package com.euphoria.e_shop.controller;
+package com.euphoria.ecommerce.controller;
 
-import com.euphoria.e_shop.model.Product;
-import com.euphoria.e_shop.service.ProductService;
+import com.euphoria.ecommerce.model.Product;
+import com.euphoria.ecommerce.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,11 +14,6 @@ public class WebController {
 
     @Autowired
     private ProductService productService;
-
-    @GetMapping("/")
-    public String index(Model model) {
-        return "redirect:/products";
-    }
 
     @GetMapping("/products")
     public String showProductsPage(@RequestParam(value = "keyword", required = false) String keyword, Model model) {

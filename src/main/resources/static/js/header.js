@@ -48,3 +48,8 @@ function updateMiniCart(items) {
 
     miniCart.innerHTML = content;
 }
+
+function toggleMiniCart() {
+    const miniCart = document.getElementById('mini-cart');
+    miniCart.style.display = miniCart.style.display === 'none' ? 'block' : 'none';
+}

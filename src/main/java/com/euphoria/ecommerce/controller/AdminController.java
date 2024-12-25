@@ -1,8 +1,8 @@
-package com.euphoria.e_shop.controller;
+package com.euphoria.ecommerce.controller;
 
-import com.euphoria.e_shop.model.Product;
-import com.euphoria.e_shop.service.OrderService;
-import com.euphoria.e_shop.service.ProductService;
+import com.euphoria.ecommerce.model.Product;
+import com.euphoria.ecommerce.service.OrderService;
+import com.euphoria.ecommerce.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
